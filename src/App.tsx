@@ -1,26 +1,26 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
 import Step3 from "./components/Step3";
 import Step4 from "./components/Step4";
 import Step5 from "./components/Step5";
 import Step6 from "./components/Step6";
+import Start from "./components/Start";
 
 function App() {
   return (
     <>
       <div className="h-full">
         <header className="text-center min-h-screen flex flex-col items-center justify-center">
-          <h1 className="text-white shadow-animation text-5xl font-extrabold m-auto">
+          <h1 className="text-white shadow-animation text-5xl font-extrabold m-auto pt-20">
             The Zen Art of Forgivness
           </h1>
-          <p className="my-5 text-lg">
-            Dear traveler, I welcome you to this sacred space,<br></br> seeking
-            solace and guidance on your path of radical forgiveness.
-            <br></br>Sit before me and open your heart to the wisdom I shall
-            impart.
-          </p>
+          <Parallax translateY={[-100, 50]}>
+            <p className="my-5 text-lg">Let us scroll </p>
+          </Parallax>
         </header>
+
         <img
           src="/images/flowers.svg"
           alt="sakura flower"
@@ -46,6 +46,7 @@ function App() {
           alt="sakura tree"
           className="absolute z-0 w-screen h-screen bottom-0 right-0"
         />
+        <Start />
         <Step1 />
         <Step2 />
         <Step3 />
@@ -54,11 +55,11 @@ function App() {
         <Step6 />
         <div className="h-screen w-screen flex flex-col items-center">
           <p className="text-center m-auto p-5 text-xl w-8/12">
-          Dear traveler, ponder these questions deeply as you progress through
-          each step of the journey. <br></br>Allow them to guide your reflections and
-          insights, leading you towards radical forgiveness and profound
-          transformation.
-        </p>
+            Dear traveler, ponder these questions deeply as you progress through
+            each step of the journey. <br></br>Allow them to guide your
+            reflections and insights, leading you towards radical forgiveness
+            and profound transformation.
+          </p>
         </div>
       </div>
     </>
