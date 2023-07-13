@@ -12,11 +12,20 @@ const content: StepContent = {
 export default function Step4() {
   return (
     <div className="w-screen h-screen text-center flex flex-col items-center m-auto">
-       <h1 className="text-5xl font-extrabold m-auto">{content.title}</h1>
+      <h1 className="text-5xl font-extrabold m-auto">{content.title}</h1>
       <p className="text-center m-auto p-5 text-xl w-8/12">
         {content.description}
       </p>
-      <span>{content.question}</span>
+      <div className="flex flex-col items-center">
+        <img
+          src="/images/question.svg"
+          alt="eye"
+          className="w-[35%] absolute -mt-16"
+        />
+        <span className="text-center m-auto text-2xl w-4/12">
+          {content.question}
+        </span>
+      </div>
     </div>
   );
 }

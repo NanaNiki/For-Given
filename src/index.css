@@ -19,6 +19,9 @@ body {
   overflow-x: hidden !important;
   background-color: rgb(229, 215, 230);
 }
+.bg-color{
+  background-color: rgb(229, 215, 230);
+}
 
 .shadow-animation {
   animation: shadow-breath 4s infinite ease-in-out  forwards;
