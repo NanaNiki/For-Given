@@ -12,10 +12,10 @@ const content: StepContent = {
 
 export default function Step2() {
   return (
-    <div className="w-screen h-screen text-center flex flex-col items-center m-auto py-10">
+    <div className="w-screen h-fit text-center flex flex-col items-center m-auto py-10">
       <div className="w-fit absolute right-0">
-        <Parallax translateX={[-120, -10]} opacity={[0,1]}>
-          <img src="/images/scrible.svg" alt="scrible" className="w-56"/>
+        <Parallax translateX={[-120, -10]} opacity={[0, 1]}>
+          <img src="/images/scrible.svg" alt="scrible" className="w-56" />
         </Parallax>
       </div>
       <h1 className="text-5xl font-extrabold m-auto pt-24">{content.title}</h1>
@@ -23,12 +23,13 @@ export default function Step2() {
         {content.description}
       </p>
       <Parallax translateX={[-100, -50]}>
-          <img src="/images/garden.svg" alt="garden" className="h-56"/>
-      </Parallax> <div className="flex flex-col items-center">
+        <img src="/images/garden.svg" alt="garden" className="h-56" />
+      </Parallax>{" "}
+      <div className="flex flex-col items-center pt-10">
         <img
           src="/images/question.svg"
           alt="eye"
-          className="w-[35%] absolute -mt-16"
+          className="w-[35%] absolute -mt-10"
         />
         <span className="text-center m-auto text-2xl w-4/12">
           {content.question}
