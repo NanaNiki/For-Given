@@ -21,15 +21,7 @@ export default function Step3() {
       <Parallax translateX={[100, -100]}>
         <img src="/images/moonlookin.svg" alt="traveler" className="w-[60%]" />
       </Parallax>
-      <div className="flex flex-row mx-auto w-8/12 justify-between">
-        <Parallax opacity={[-0.75, 1]} translateY={[-120, 500]}>
-          <img src="/images/flowers.svg" alt="flower" className="w-16 h-16" />
-        </Parallax>
-        <Parallax opacity={[-0.75, 1]} translateY={[-120, 500]}>
-          <img src="/images/flowers.svg" alt="flower" className="w-16 h-16" />
-        </Parallax>
-      </div>
-      <h1 className="text-5xl font-extrabold m-auto pt-20">{content.title}</h1>
+      <h1 className="text-5xl font-extrabold m-auto pt-8">{content.title}</h1>
       <p className="text-center m-auto p-5 text-2xl w-6/12">
         {content.description}
       </p>

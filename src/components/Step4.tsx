@@ -13,7 +13,7 @@ const content: StepContent = {
 export default function Step4() {
   return (
     <div className="w-screen h-fit text-center flex flex-col items-center mx-auto">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center -mt-10 pb-8">
         <Parallax translateX={[-100, 100]}>
           <img src="/images/birds.svg" alt="birds" className="w-[85%] mt-32" />
         </Parallax>
@@ -32,21 +32,25 @@ export default function Step4() {
           </Parallax>
         </div>
       </div>
-      <h1 className="text-5xl font-extrabold m-auto pt-28">{content.title}</h1>
+      <div className="w-screen flex flex-col mt-24">
+        <div className="absolute mt-20">
+          <img src="/images/waterfall.svg" alt="waterfall" className="-ms-10" />
+        </div>
+        <div className="absolute mt-20">
+          <Parallax opacity={[0, 1]} translateY={[-30, 30]}>
+            <img
+              src="/images/waterfallpink.svg"
+              alt="waterfall"
+              className="-ms-10 mt-5"
+            />
+          </Parallax>
+        </div>
+      </div>
+      <h1 className="text-5xl font-extrabold m-auto pt-8">{content.title}</h1>
       <p className="text-center m-auto p-5 text-2xl w-6/12">
         {content.description}
       </p>
-      <div className="flex flex-col w-screen items-center justify-center my-4">
-        <Parallax rotate={["360deg", "0deg"]} scale={[0, 1.5]}>
-          <img
-            src="/images/flowers.svg"
-            alt="flower"
-            className="w-96  mx-auto"
-          />
-        </Parallax>
-      </div>
-
-      <div className="flex flex-col items-center pt-10">
+      <div className="flex flex-col items-center pt-32">
         <img
           src="/images/question.svg"
           alt="eye"
@@ -56,16 +60,6 @@ export default function Step4() {
           {content.question}
         </span>
       </div>
-
-{/* <div className="flex flex-row w-screen items-center justify-center">
-        <Parallax translateX={[10, -50]}>
-          <img src="/images/heartL.svg" alt="heart" className="w-32 my-10" />
-        </Parallax>
-        <Parallax translateX={[-10, 50]}>
-          <img src="/images/heartR.svg" alt="heart" className="w-32 my-10" />
-        </Parallax>
-      </div> */}
-
     </div>
   );
 }

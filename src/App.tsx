@@ -51,15 +51,45 @@ function App() {
         <Step2 />
         <Step3 />
         <Step4 />
+        <div className="relative h-fit pb-40">
+        <div className="absolute -right-32">
+        <Parallax rotate={["360deg", "0deg"]}>
+          <img
+            src="/images/flowers.svg"
+            alt="flower"
+            className="w-[40rem]"
+          />
+        </Parallax>
+      </div>
+      </div>
         <Step5 />
         <Step6 />
-        <div className="h-screen w-screen flex flex-col items-center">
-          <p className="text-center m-auto p-5 text-xl w-8/12">
+        <div className="h-screen w-screen flex flex-col">
+          <p className="text-start my-auto ms-20 p-5 text-2xl w-6/12">
             Dear traveler, ponder these questions deeply as you progress through
             each step of the journey. <br></br>Allow them to guide your
             reflections and insights, leading you towards radical forgiveness
             and profound transformation.
           </p>
+          <div className="absolute right-16 mt-56">
+            <Parallax opacity={[0,1]} translateY={[-200, 200]}>
+              <div className="bg-pink-300 rounded-full h-36 w-36"></div>
+            </Parallax>
+          </div>
+          <div className="w-screen flex-row flex items-end">
+            <img
+              src="/images/land.svg"
+              alt="land"
+              className=" absolute right-0"
+            />
+            <Parallax translateX={[130, 280]} scale={[1, 0]}>
+              <img
+                src="/images/moonlookin.svg"
+                alt="traveler"
+                className="w-[40%] -mb-4"
+              />
+            </Parallax>
+          </div>
         </div>
       </div>
     </>
