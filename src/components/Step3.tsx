@@ -29,20 +29,20 @@ export default function Step3() {
         <Parallax rotate={["0deg", "560deg"]} opacity={[1, 0]}>
           <img
             src="/images/spiral.svg"
-            alt="flower"
+            alt="spiral"
             className="w-[65%] mx-auto"
           />
         </Parallax>
         <img
           src="/images/accept.svg"
-          alt="flower"
+          alt="accepting hands"
           className="w-[40%] mx-auto absolute -mt-8"
         />
       </div>
       <div className="flex flex-col items-center pt-10">
         <img
           src="/images/question.svg"
-          alt="eye"
+          alt="question background"
           className="w-[39%] absolute -mt-12"
         />
         <span className="text-center m-auto text-2xl w-4/12">

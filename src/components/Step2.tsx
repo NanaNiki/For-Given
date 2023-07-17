@@ -28,7 +28,7 @@ export default function Step2() {
       <div className="flex flex-col items-center pt-10">
         <img
           src="/images/question.svg"
-          alt="eye"
+          alt="question background"
           className="w-[35%] absolute -mt-10"
         />
         <span className="text-center m-auto text-2xl w-4/12">

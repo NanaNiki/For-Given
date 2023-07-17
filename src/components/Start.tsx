@@ -8,7 +8,7 @@ export default function Start() {
         <div className="bg-pink-300 rounded-full h-36 w-36 mx-auto"></div>
       </Parallax>
       <Parallax opacity={[-0.25, 1]} translateX={[-10, 3]}>
-        <img src="/images/travel.svg" alt="road" className="absolute" />
+        <img src="/images/road.svg" alt="road" className="absolute" />
       </Parallax>
       <div className="flex flex-col w-10/12 items-end pe-2">
         <Parallax opacity={[0, 1]} translateY={[-115, 510]}>
@@ -25,8 +25,8 @@ export default function Start() {
         forgiveness.
       </p>
       <img
-        src="/images/traveler.svg"
-        alt="road"
+        src="/images/meditation.svg"
+        alt="meditation figure"
         className="absolute h-64 right-[10%]"
       />
       <Parallax scaleX={[1, 1.15]}>

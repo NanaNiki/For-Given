@@ -17,7 +17,7 @@ export default function Step1() {
         <Parallax translateX={[120, 0]} opacity={[0, 1]}>
           <img
             src="/images/cloud.svg"
-            alt="awaken"
+            alt="cloud"
             className="w-[27%] -mt-28"
           />
         </Parallax>
@@ -29,8 +29,8 @@ export default function Step1() {
         </p>
         <div className="flex flex-col">
           <div className="w-9/12 flex flex-row justify-between mx-auto pe-6">
-            <img src="/images/eyel.svg" alt="eye" className="w-[35%]" />
-            <img src="/images/eyer.svg" alt="eye" className="w-[35%]" />
+            <img src="/images/eyel.svg" alt="eye left" className="w-[35%]" />
+            <img src="/images/eyer.svg" alt="eye right" className="w-[35%]" />
           </div>
           <Parallax translateY={[-100, 10]}>
             <div className="w-10/12 flex flex-row justify-evenly mx-auto">
@@ -39,11 +39,10 @@ export default function Step1() {
             </div>
           </Parallax>
         </div>
-
         <div className="flex flex-col items-center">
           <img
             src="/images/question.svg"
-            alt="eye"
+            alt="question background"
             className="w-[35%] absolute -mt-16"
           />
           <span className="text-center m-auto text-2xl w-4/12">

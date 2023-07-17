@@ -21,12 +21,12 @@ export default function Step4() {
           <Parallax translateX={[100, -30]} opacity={[0.5, 1]}>
             <img
               src="/images/cloudpink.svg"
-              alt="awaken"
+              alt="cloud pink"
               className="w-[25%] ms-[50%]"
             />
             <img
               src="/images/cloudpink.svg"
-              alt="awaken"
+              alt="cloud pink"
               className="w-[25%] mt-20"
             />
           </Parallax>

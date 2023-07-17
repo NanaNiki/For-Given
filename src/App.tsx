@@ -37,13 +37,13 @@ function App() {
           className="absolute top-[4em] left-[4%] h-[2em] w-[2em] flower3 opacity-0"
         />
         <img
-          src="/images/roottree.svg"
+          src="/images/sakuratree.svg"
           alt="sakura tree"
           className="absolute z-0 w-screen h-screen top-0 left-0"
         />
         <img
           src="/images/land.svg"
-          alt="sakura tree"
+          alt="land"
           className="absolute z-0 w-screen h-screen bottom-0 right-0"
         />
         <Start />
@@ -51,17 +51,6 @@ function App() {
         <Step2 />
         <Step3 />
         <Step4 />
-        <div className="relative h-fit pb-40">
-        <div className="absolute -right-32">
-        <Parallax rotate={["360deg", "0deg"]}>
-          <img
-            src="/images/flowers.svg"
-            alt="flower"
-            className="w-[40rem]"
-          />
-        </Parallax>
-      </div>
-      </div>
         <Step5 />
         <Step6 />
         <div className="h-screen w-screen flex flex-col">
